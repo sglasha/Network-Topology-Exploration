@@ -17,7 +17,4 @@ class Device:
         self.is_damaged = True
 
     def __str__(self):
-        if self.is_damaged:
-            return f"Device: {self.name}: is damaged"
-        else:
-            return f"{self.name}"
+        return f"{self.name}"

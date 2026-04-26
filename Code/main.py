@@ -11,6 +11,8 @@ def display_connections(topology_array):
     for device in topology_array:
         print(f"Devices Accessible by {device}:")
         if device.get_is_damaged():
+            print(f"Device: {device} is damaged")
+            print()
             continue
 
         accessed_devices = set()
@@ -47,6 +49,17 @@ def display_connections(topology_array):
         print("Damaged Connections:")
         for damaged in damaged_connections:
             print(damaged)
+
+    unaccessed_connections = [] # ensures that if both devices surround a connection that those connections are still displayed
+    for device in topology_array:
+        for connection in device.get_connections():
+            if connection not in undamaged_connections and connection not in damaged_connections and connection not in unaccessed_connections:
+                unaccessed_connections.append(connection)
+
+    if len(unaccessed_connections) != 0:
+        print("Unaccessible Connections:")
+        for unaccessed in unaccessed_connections:
+            print(unaccessed)
 
     print()
 
