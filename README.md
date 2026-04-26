@@ -20,4 +20,4 @@ The program procederally generates a graph of x end devices, where x is changeab
 
 ## How to Run the Program:
 
-The Project can be fully ran from main.py. You can change the `num_end_devices` variable on line 4 to simulate larger or smaller networks, but it may be hard to see the results when analyzing a network that is to large since it will print out every connection and device accessable by every device.
+The Project can be fully ran from [main.py](./Code/main.py). You can change the `num_end_devices` variable on line 4 to simulate larger or smaller networks, but it may be hard to see the results when analyzing a network that is to large since it will print out every connection and device accessable by every device.
