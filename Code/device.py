@@ -16,5 +16,8 @@ class Device:
     def damage(self):
         self.is_damaged = True
 
+    def fix(self):
+        self.is_damaged = False
+
     def __str__(self):
         return f"{self.name}"
