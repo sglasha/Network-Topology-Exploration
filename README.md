@@ -16,7 +16,7 @@ CSC 2770 Honors Project on Network Topologies
 
 ## What the Program Does:
 
-The program procederally generates a graph of x end devices, where x is changeable at the `num_end_devices` variable. It then uses Breadth First Search (BFS) to analyze the generated graph and shows what devices can reach other devices, which devices are damaged, and each connection, sorted by if it is damaged or not. It then damages a number of random devices 
+The program procederally generates a graph of x end devices, where x is changeable at the `num_end_devices` variable. It then uses Breadth First Search (BFS) to analyze the generated graph and shows what devices can reach other devices, which devices are damaged, and each connection, sorted by if it is damaged or not. It then damages x random devices, where x is changeable at the `damages` variable. After the damage is applied the BFS algorithm reanalyzes the topology showing what devices can or cant be reached, as well as which connections are damaged or unreachable. A connection will become unreachable if both devices that it connects become damaged as the BFS algorithm will not check any connections from a damaged device.
 
 ## How to Run the Program:
 
